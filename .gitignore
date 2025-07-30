@@ -1,15 +1,38 @@
+# IntelliJ / Android Studio
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+.idea/*
+!.idea/codeStyles
+!.idea/inspectionProfiles
+
+# 如果不想共享代码格式和检查规则，直接用这一行忽略所有
+# .idea/
+
+# Gradle
+.gradle/
+build/
+*/build/
+
+# 本地配置文件
+local.properties
+*.keystore
+*.jks
+
+# macOS
 .DS_Store
-/build
-/captures
+
+# NDK / CMake 构建目录
 .externalNativeBuild
 .cxx
-local.properties
+
+# Android Studio 运行和缓存文件
+captures/
+.idea/shelf/
+.idea/deploymentTargetSelector.xml
+.idea/gradle.xml
+.idea/misc.xml
+.idea/vcs.xml
+.idea/runConfigurations.xml
+.idea/AndroidProjectSystem.xml
+
+# 可能的 Patch/临时文件
+*.patch

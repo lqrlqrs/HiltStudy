@@ -2,8 +2,6 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
-    alias(libs.plugins.hilt)  // 用 toml 中定义的 hilt 插件
-    kotlin("kapt")
 }
 
 android {
@@ -58,6 +56,4 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    implementation(libs.hilt.android)
-    kapt(libs.hilt.compiler) // 这个是必须的
 }
